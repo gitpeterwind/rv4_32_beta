@@ -1,0 +1,8 @@
+# SOx splits for EmChemXX
+# for Forest fire /biomass burning emissions 
+# Key-word, MASS_ASSUMED= 0 by default, 
+# change when emissions have artificial mass, e.g. 46 for NOx as NO2
+: MASS_ASSUMED 64
+99 99     SO2   SO4     #HEADERS
+#DATA
+101   11   95.00   5.00

@@ -1,0 +1,8 @@
+# NH3 splits for EmChemXX with forest fires
+# FF assigned to country 101, sector 11
+# Key-word, MASS_ASSUMED= 0 by default, 
+# change when emissions have artificial mass, e.g. 46 for NOx as NO2
+: MASS_ASSUMED 0 
+99 99     NH3       #HEADERS
+#DATA
+101   11  100.00

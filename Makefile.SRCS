@@ -1,0 +1,48 @@
+#=============================================================================
+# DLETE ChemSpecs_wrapper.f90
+SRCS ?=	\
+	AeroConstants_mod.f90 AeroFunctions.f90 Aero_Vds_mod.f90 \
+	Ammonium_mod.f90 AOD_PM_mod.f90 \
+	Advection_mod.f90 AirEmis_mod.f90 AllocInit.f90 \
+	AOTnPOD_mod.f90 Aqueous_n_WetDep_mod.f90 \
+	BiDir_emep.f90 BiDir_module.f90 \
+	BLPhysics_mod.f90 Biogenics_mod.f90 \
+	BoundaryConditions_mod.f90 CellMet_mod.f90 CheckStop_mod.f90 \
+	ChemFields_mod.f90 \
+	CoDep_mod.f90 Country_mod.f90 \
+	ChemFunctions_mod.f90 Convection_mod.f90 ColumnSource_mod.f90 \
+        CM_ChemDims_mod.f90 CM_ChemGroups_mod.f90 CM_ChemRates_mod.f90 CM_ChemSpecs_mod.f90  \
+	Config_module.f90  \
+	Debug_module.f90 \
+	DefPhotolysis_mod.f90 Derived_mod.f90 DerivedFields_mod.f90 DO3SE_mod.f90 \
+	DryDep_mod.f90 DustProd_mod.f90 EcoSystem_mod.f90  \
+ 	emep_Main.f90 \
+	EmisDef_mod.f90 EmisGet_mod.f90 Emissions_mod.f90 ExternalBICs_mod.f90 \
+	FastJ_mod.f90 ForestFire_mod.f90 Functions_mod.f90 \
+        GasParticleCoeffs_mod.f90 \
+	Gravset_mod.f90 GridAllocate_mod.f90 GridValues_mod.f90 \
+	InterpolationRoutines_mod.f90 \
+	Io_mod.f90 Io_Nums_mod.f90 Io_Progs_mod.f90 KeyValueTypes.f90  LandDefs_mod.f90 Landuse_mod.f90 \
+	LandPFT_mod.f90 LocalVariables_mod.f90 MARS_mod.f90 MARS_Aero_water_mod.f90 \
+	MassBudget_mod.f90 Met_mod.f90 MetFields_mod.f90 EQSAM_mod.f90 MicroMet_mod.f90 \
+	MosaicOutputs_mod.f90 MPI_Groups_mod.f90 AerosolCalls.f90 \
+        My_Derived_mod.f90 My_Outputs_mod.f90 NetCDF_mod.f90 Nest_mod.f90 NumberConstants.f90 \
+        OutputChem_mod.f90 OwnDataTypes_mod.f90 Par_mod.f90 \
+	PhysicalConstants_mod.f90 PlumeRise_mod.f90 PointSource_mod.f90 \
+	Precision_mod.f90 Radiation_mod.f90 Rb_mod.f90 \
+	ReadField_mod.f90 Rsurface_mod.f90 Runchem_mod.f90 Setup_1d_mod.f90 \
+	Sites_mod.f90 SmallUtils_mod.f90 SOA_mod.f90 \
+	SoilWater_mod.f90 Solver.f90 SeaSalt_mod.f90 StoFlux_mod.f90 \
+	SubMet_mod.f90 Tabulations_mod.f90 TimeDate_mod.f90 TimeDate_ExtraUtil_mod.f90 \
+	Timefactors_mod.f90 Timing_mod.f90 \
+	Trajectory_mod.f90 uEMEP_mod.f90 Units_mod.f90 \
+        YieldModifications_mod.f90 \
+	ZchemData_mod.f90 \
+	global2local.f90 PhyChem_mod.f90 My_3DVar_mod.f90 My_Pollen_mod.f90 
+
+
+# default target
+all:
+
+# ensure pollen_const_mod.mod is updated for `make MACC`
+Pollen_const_mod.o: My_Pollen_mod.o
