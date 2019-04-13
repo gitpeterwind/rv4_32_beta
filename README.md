@@ -5,7 +5,7 @@ You must have MPI and netcdf4 fortran libraries installed. Edit the Makefile to 
 
  > make
 
-If you do not have them already, you can download the (old) input data with:
+If you do not have them already, you can download the (old version) input data with:
 
  > ./catalog.py --input
 
