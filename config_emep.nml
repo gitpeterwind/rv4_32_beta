@@ -88,17 +88,16 @@ LandCoverInputs%MapFile =
 &OutputConcs_config
 OutputMisc=
  ! name        class    subclass txt   unit          index f2d dt_scale scale avg period
- !------------------------------------------------------------------------------------
- 'Psurf_d',        'PSURF','-',  '-','hPa' ,-99,-99,F,1.0,T,'YMD',
-!====================================================================================
-OutputConcs= 
-      'HMIX'                ,'m'   ,'2d','HMIX'     ,'MISC' ,'YM', 
-'ws10m',          'MET2D','u10','-','m/s' ,-99,-99,F,1.0,T,'YMD',
 'met2d_uref',     'MET2D','u_ref','-','m/s' ,-99,-99,F,1.0,T,'YM',
 'met2d_rh2m',     'MET2D','relative_humidity_2m','-','frac',-99,-99,F,1.0,T,'YM',
 'met2d_u10',      'MET2D','u10',                 '-','frac',-99,-99,F,1.0,T,'YM',
 'met2d_SMI_deep', 'MET2D','SMI3',                '-','-'   ,-99,-99,F,1.0,T,'YM',
 'met2d_SMI_uppr', 'MET2D','SMI1',                '-','-'   ,-99,-99,F,1.0,T,'YM',
+ !------------------------------------------------------------------------------------
+ 'Psurf_d',        'PSURF','-',  '-','hPa' ,-99,-99,F,1.0,T,'YMD',
+!====================================================================================
+OutputConcs= 
+      'HMIX'                ,'m'   ,'2d','HMIX'     ,'MISC' ,'YM', 
 !----------------------------------------------------------------
 ! ug/m3                                                    
       'SO2'                 ,'ug'  ,'2d','AIR_CONCS','SPEC' ,'YMD',
