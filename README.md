@@ -1,7 +1,7 @@
 This is a prerelease of version rv4_32 of the emep ctm model.
 Please do not distribute further. 
 
-You must have MPI and netcdf4 fortran libraries installed. Then edit the Makefile to adapt it to your compiler and netcdf library path, and then just
+You must have MPI and netcdf4 fortran libraries installed. Edit the Makefile to adapt it to your compiler and netcdf library path, and then just
 
  > make
 
