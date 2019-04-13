@@ -479,7 +479,7 @@ type(names), public, save :: InputFiles(Size_InputFiles)
 !4) In the routine using the file, add the XXFile under  "use Config_module"
 !5) replace the name you used in the routine with XXFile
 character(len=TXTLEN_FILE), target, save, public :: femisFile = 'DataDir/femis.dat'
-character(len=TXTLEN_FILE), target, save, public :: Vertical_levelsFile = 'DataDir/Vertical_levels20_EC.txt'
+character(len=TXTLEN_FILE), target, save, public :: Vertical_levelsFile = 'DataDir/inp_rv4_32_beta/Vertical_levels20_EC.txt'
 character(len=TXTLEN_FILE), target, save, public :: EmisHeightsFile = 'DataDir/EmisHeights.txt'
 character(len=TXTLEN_FILE), target, save, public :: SoilTypesFile = 'DataDir/SoilTypes_IFS.nc'
 character(len=TXTLEN_FILE), target, save, public :: SurfacePressureFile = 'DataDir/SurfacePressure.nc'
