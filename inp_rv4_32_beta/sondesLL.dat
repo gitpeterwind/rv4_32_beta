@@ -1,0 +1,54 @@
+# "Sondes: names, locations, elevations"
+# "Area: EMEP-Europe"
+# "ix: x coordinate"
+# "iy: y coordinate"
+# "lev: vertical coordinate (20=ground)"
+: Units index
+: Coords LatLong
+: VertCoords EMEPsigma
+: DomainName NA
+#
+name ix iy lev #HEADERS
+-    index index level #SKIP
+#DATA:
+Uccle            50.80    4.35    20
+Lerwick          60.13   -1.18    20
+Sodankyla        67.39   26.65    20
+Ny_Alesund       78.93   11.88    20
+Hohenpeissenberg 47.80   11.02    20
+Payerne          46.82    6.95    20
+Praha            50.00   14.67    20
+Cabauw           51.971  4.927    20  ! -0.7m 213m mast
+DeBilt           52.00    5.18    20
+Ankara           39.80   32.50    20
+Izana            28.29  -16.49    20
+Eureka           79.98  -85.93    20
+Alert            82.50  -62.30    20
+Edmonton         53.55 -114.10    20
+Resolute         74.72  -94.98    20
+Goose_Bay        53.32  -60.13    20
+Churchill        58.75  -94.07    20
+Hilo             19.72 -155.07    20
+Trinidad_Head    41.05 -124.15    20
+Huntsville       34.80  -86.80    20
+Yakutsk          62.08  129.75    20
+Sapporo          43.05  141.33    20
+Kagoshima        31.60  130.60    20
+Tateno           36.05  140.10    20
+taipei           25.03  121.53    20
+Harestua_Obs     60.21  10.76     20  !Jon/RSS
+Kiruna           67.84  20.41     20  !Jon/RSS
+Zugspitze        47.42  10.98     20  !Jon/RSS
+Jungfraujoch     46.55   7.98     20  !Jon/RSS
+Izana2           28.3  -16.48     20  !Jon/RSS
+Thule            76.53 -68.74     20  !Jon/RSS
+Eureka2          80.05 -86.42     20  !Jon/RSS
+Ny_Alesund2      78.92   11.93    20  !Jon/RSS
+Bremen           53.1     8.8     20  !Jon/RSS, FTIR station
+Azores           38.683 -27.35    20  ! 38d41' -27d21'
+Sea40N20W        40.0   -20.0     20  ! Artificial, introduced to study Atlantic chem
+Sea50N20W        50.0   -20.0     20
+Sea60N20W        60.0   -20.0     20
+MtBachelor       43.979 -121.687  20  !Elevated site, isolated peak (Jaffe) 2.7km
+Schauinsland     47.92   7.92     20  !PAN; see Fiore ea 2018
+MtWaliguan       36.28 100.90     20  ! 3818 m PAN testing, Fiore ea 2018

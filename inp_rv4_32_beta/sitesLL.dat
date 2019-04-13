@@ -1,0 +1,55 @@
+# "Sites: names, locations, elevations"
+# "Area: EMEP-Europe"
+# "ix: x coordinate"
+# "iy: y coordinate"
+# "lev: vertical coordinate (20=ground, which will give the 3m concentrations. Other k values will give the centre of the layer.)"
+# " Some starting sites...."
+# "Harestua         60.211 10.717    20  !Older coords"
+: Units index
+: Coords LatLong
+: VertCoords EMEPsigma
+: DomainName NA
+#
+name ix iy lev #HEADERS
+-    index index level #SKIP
+#DATA:
+Harestua_Obs     60.21  10.76     20  !Jon/RSS
+Harestua_Obs18   60.21  10.76     20  !Jon/RSS, rel ht. 18
+Auchencorth_Moss             55.79323   -3.244781      20 ! From Massimo
+Harwell                      51.57097   -1.325117      20 !  "     "
+Writtle_TORCH                51.73667    0.424444      20 !  "     "
+Yarner_Wood                  50.59761   -3.716511      20 !  "     "
+Bush_Estate                  55.86222   -3.206111      20 !  "     "
+Penicuik         55.8616  -3.2065  20  !Coords were wrong (E not W) until 3rd Sep 2010
+MaceHead         53.3272 -9.89167 20  ! GAW 53 d 19'38'' N 9d53'30''W
+Cabauw           51.971  4.927    20  ! -0.7m 213m mast
+Kiruna           67.84  20.41     20  !Jon/RSS
+Zugspitze        47.42  10.98     20  !GAW ZUG/ZSF Jon/RSS, 2670 since 2001, pre: 2962 (see Gilge et al.) 
+Zugspitze11      47.42  10.98     11  !Jon/RSS, 2964
+Zugspitze14      47.42  10.98     14  !Jon/RSS, 2964, rel ht 1430
+Jungfraujoch     46.55   7.98     20  !GAW JFJ, 3580 (Gilge et al., ACP 2010) 
+Jungfraujoch13   46.55   7.98     10  !Jon/RSS, 3450, rel ht. 1613
+Jungfraujoch10   46.55   7.98     10  !Jon/RSS, 3450, ca. 650 hPa, Tave=-8.2
+Izana            28.3  -16.48     20  !Jon/RSS
+Thule            76.53 -68.74     20  !Jon/RSS
+Eureka           80.05 -86.42     20  !Jon/RSS
+Ny_Alesund2      78.92   11.93    20  !Jon/RSS
+Ny_Alesund       78.93   11.88    20
+Hyytiala         61.85   24.28    20
+Aveiro           40.57998 -8.64087    20 !From Casimiro
+Sodankyla        67.39   26.65    20
+Hohenpeissenberg 47.80   11.02    20  ! GAW HPB, 985m, but ca. 300m above surroundings, Gilge et al., ACP, 2010
+Hohen18          47.80   11.02    18
+Hohen16          47.80   11.02    16
+Payerne          46.82    6.95    20
+Bremen           53.1     8.8     20   ! Jon/RSS FTIR station
+MtBachelor11     43.979 -121.687  11  !Elevated site, isolated peak (Jaffe) 2.7km
+MtBachelor12     43.979 -121.687  12  !Elevated site, isolated peak (Jaffe) 2.7km
+Azores           38.683 -27.35    20  ! 38d41' -27d21'
+Sea40N20W        40.0   -20       20  ! Artificial, introduced to study Atlantic chem
+Sea50N20W        50.0   -20       20
+Sea60N20W        60.0   -20       20
+MtBachelor       43.979 -121.687  20  !dsElevated site, isolated peak (Jaffe) 2.7km
+Trinidad_Head    41.05  -124.15   19  !ds NOAA 107m (EMEP results change a lot near here!)
+Azores12         38.27   -28.19   12  !ds 2225m NOAA, simple elev correction
+MaunaLoa10       19.54  -155.58   10  !ds 3397m NOAA,  simple elev correction

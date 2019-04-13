@@ -498,8 +498,8 @@ character(len=TXTLEN_FILE), target, save, public :: SplitSpecialsFile = 'DataDir
 character(len=TXTLEN_FILE), target, save, public :: RoadMapFile = 'DataDir/RoadMap.nc'
 character(len=TXTLEN_FILE), target, save, public :: AVG_SMI_2005_2010File = 'DataDir/AVG_SMI_2005_2010.nc'
 character(len=TXTLEN_FILE), target, save, public :: Soil_TegenFile = 'DataDir/Soil_Tegen.nc'
-character(len=TXTLEN_FILE), target, save, public :: SitesFile = 'DataDir/sitesLL.dat'
-character(len=TXTLEN_FILE), target, save, public :: SondesFile = 'DataDir/sondesLL.dat'
+character(len=TXTLEN_FILE), target, save, public :: SitesFile = 'DataDir/inp_rv4_32_beta/sitesLL.dat'
+character(len=TXTLEN_FILE), target, save, public :: SondesFile = 'DataDir/inp_rv4_32_beta/sondesLL.dat'
 character(len=TXTLEN_FILE), target, save, public :: GLOBAL_LAInBVOCFile = 'DataDir/GLOBAL_LAInBVOC.nc'
 character(len=TXTLEN_FILE), target, save, public :: EMEP_EuroBVOCFile = 'DataDir/EMEP_EuroBVOC.nc'
 !SEASON replace by 'jan', 'apr', 'jul' or 'oct' in readdiss
