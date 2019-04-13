@@ -7,11 +7,11 @@ You must have MPI and netcdf fortran libraries installed. Then edit the Makefile
 
 If you do not have them already, you can download the (old) input data with:
 
- > catalog.py --input
+ > ./catalog.py --input
 
 The metdata for 2015 (EECCA domain) with:
 
- > catalog.py -Y 2015 -m --met-domain EECCA
+ > ./catalog.py -Y 2015 -m --met-domain EECCA
 
 (You can stop the download after one month, if you just want to test)
 
