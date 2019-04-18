@@ -965,7 +965,7 @@ subroutine Getgridparams(LIMAX,LJMAX,filename,cyclicgrid)
       !WRF  format
       call check(nf90_inq_varid(ncid=ncFileID, name="MAPFAC_UY", varID=varID))
       call nf90_get_var_extended(ncFileID,varID,xm_j_ext,-1,LIMAX+2,-1,LJMAX+2,&
-        ishift_in=1)  !NB:shift i by 1 since wrf start at left face
+           ishift_in=1)  !NB:shift i by 1 since wrf start at left face
       status = nf90_get_att(ncFileID,nf90_global,"DY",WRF_DY)
       if(status==nf90_noerr) then
         !WRF uses DY/MAPFAC_UY while emep uses GRIDWIDTH_M/xm_j for the y size
@@ -982,12 +982,13 @@ subroutine Getgridparams(LIMAX,LJMAX,filename,cyclicgrid)
     !Note that xm is inverse length: interpolate 1/xm rather than xm
     do j=0,LJMAX+1
       do i=0,LIMAX+1
-        xm_i(i,j)=xm_i_ext(i,j)
-        xm_j(i,j)=xm_j_ext(i,j)
+        xm_i(i,j)=max(1.0E-5,xm_i_ext(i,j))
+        xm_j(i,j)=max(1.0E-5,xm_j_ext(i,j))
         xm2(i,j) = 4.0*( (xm_i_ext(i,j-1)*xm_i_ext(i,j))/&
         (xm_i_ext(i,j-1)+xm_i_ext(i,j))  )&
         *( (xm_j_ext(i-1,j)*xm_j_ext(i,j))/&
         (xm_j_ext(i-1,j)+xm_j_ext(i,j))  )
+        xm2(i,j)=max(1.E-7,xm2(i,j))
         xmd(i,j) =1.0/xm2(i,j)
         xm2ji(j,i) = xm2(i,j)
         xmdji(j,i) = xmd(i,j)
